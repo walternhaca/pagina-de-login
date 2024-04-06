@@ -10,8 +10,11 @@ Cada tag pode receber atributos... Dos quais funcionam para todas tags ou so aqu
   }
 CORES: rgb: agrupamento dois a dois, de 0-F;
 
-font: peso tamanho/altura 'tipofonte', tipoalternativo;
-font: 300 16px/140% 'Roboto',sans-serif;
+font
+Estrutura:
+  font: peso tamanho/altura 'tipo-de-fonte', fonte-alternativa;
+Exemplo:
+  font: 300 16px/140% 'Roboto',sans-serif;
 
 o css observa todos elementos html como se fosse caixas
 padding - preenchimento interno
@@ -20,15 +23,19 @@ margin - espaco ao redor
 
 Colocamos o css em cascata e ele leva em consideracao o ultimo elemento escrito ou o mais especifico.
 
-borda-no-topo: tamanhoEmPx tipoBorda Cor...(a1)..(1a)..suaviza/opacidade
+bordas
+borda-no-topo: tamanho-em-px tipoBorda Cor...(a1)..(1a)..suaviza/opacidade
 Exemplo: border-top: 1px solid #ffffff1a;
 
-separacao-borda - border-colapse : collapse;
+Separacao borda
+  border-colapse : collapse;
 
 all: unset; - tira todas as informacoes
 
-Informacao repetitiva, variavel... var(nomevar);
+Para informacao repetitiva usamos uma variavel. 
+Estrutura de Criacao - :root{}
 colocamos/criamos em root que significa raiz...
+Uso- var(nomevar);
 
 bordas laterais...
 
@@ -48,9 +55,9 @@ box-sizing: border-box; - garante que a largura da caixa seja a mesma que a do p
 
  margin: 0 auto; significa que a margem na vertical eh igual a 0 e na horizontal eh automatica
 
- SVG eh uma maneira de colocar imagens/icones/logo parecidas com codigo
+ SVG é uma maneira de colocar imagens/icones/logo parecidas com codigo
 
-padding-botton - pading abaixo
+padding-botton - espacamento entre o conteúdo de um elemento e a borda inferior desse elemento
 
 #JavaScrip
 *variaveis
@@ -113,7 +120,7 @@ event.preventDefault() - nao permite com que o formulario padrao seja enviado
 
 new FormData ( Coloca-se o Alvo(event.target) ) - recebe dados de um formulario
  
-Spread? Espalhar 
+to spread (Espalhar) 
 exemplo:
 array1 = [conteudonovo, ...conteudosvelhos]
 
